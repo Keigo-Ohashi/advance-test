@@ -1,0 +1,52 @@
+.confirm__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm__group {
+    width: 800px;
+    padding: 2em 0;
+    display: flex;
+}
+
+.confirm__group-title {
+    width: 200px;
+    font-weight: bold;
+}
+
+.confirm__group-content {
+    width: 600px;
+}
+
+.confirm__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm__button-submit {
+    border-radius: 4px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5em 3em;
+    margin-bottom: 0.5em;
+}
+
+.confirm__button-correct {
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    padding: 0;
+    line-height: 1em;
+}
+
+.confirm__textarea {
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.confirm__textarea span {
+    overflow-wrap: normal;
+}

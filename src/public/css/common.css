@@ -1,0 +1,52 @@
+main {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 3em;
+    text-align: center;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-label {
+    line-height: 3em;
+    padding-left: 3em;
+    padding-right: 2em;
+    position: relative;
+}
+
+.radio-label::before,
+.radio-label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.radio-label::before {
+    background-color: #fff;
+    border: 1px solid #777;
+    width: 2em;
+    height: 2em;
+    left: 0px;
+}
+
+.radio-label::after {
+    background-color: #000;
+    border: 1px solid #000;
+    width: 0.6em;
+    height: 0.6em;
+    left: 0.7em;
+    opacity: 0;
+}
+
+.radio-button:checked + .radio-label::after {
+    opacity: 1;
+}
